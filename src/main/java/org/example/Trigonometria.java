@@ -3,7 +3,7 @@ package org.example;
 import java.util.Scanner;
 /**
  * @author Ruben Serrano Nohales (usuario git:guarin99)
- * @version 0.1
+ * @version 1.0
  * @sice 13/02/2025
  *
  * Clase que facilita los metodos para calcular funciones trigonometricas basicas.

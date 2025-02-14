@@ -5,8 +5,8 @@ package org.example;
  * Esta clase implementa métodos para realizar operaciones de resta con diferentes tipos de números.
  * Además, mantiene un valor acumulado al cual se le pueden restar valores sucesivamente.
  *
- * Autor: [Tu Nombre]
- * Perfil de GitHub: [Tu Perfil]
+ * Autor: Marilu Hernandez
+ * Perfil de GitHub: SoyMarilu
  */
 import java.util.Scanner;
 

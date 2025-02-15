@@ -1,65 +1,10 @@
-package Calculadora;
+package calculadora;
 
 import java.util.Scanner;
 
-/**
- * Clase que permite realizar operaciones de multiplicacion.
- *
- * @version 1.0
- * @since 1.0
- * @author Jorge Vizuete Mendez
- */
-
 public class Producto {
 
-   private static Scanner leer = new Scanner(System.in);
-
-   public static void main(String[] args){
-
-        int opcion = 0;
-
-        do {
-            opcion = menu();
-            switch (opcion) {
-                case 1:
-                    System.out.println("Introduzca un número real");
-                    double a = verificarReal(sc);
-                    System.out.println("Introduzca otro número real");
-                    double b = verificarReal(sc);
-                    System.out.println("Resultado = " + Producto.productoReales2(a, b));
-                    break;
-                case 2:
-                    System.out.println("Introduzca un número entero");
-                    int a = verificarEntero(sc);
-                    System.out.println("Introduzca otro número entero");
-                    int b = verificarEntero(sc);
-                    System.out.println("Resultado = " + Producto.productoEnteros(a, b));
-                    break;
-                case 3:
-                    System.out.println("Introduzca un número real");
-                    double a = verificarReal(sc);
-                    System.out.println("Introduzca otro número real");
-                    double b = verificarReal(sc);
-                    System.out.println("Introduzca otro número real");
-                    double c = verificarReal(sc);
-                    System.out.println("Resultado = " + Producto.productoReales3(a, b, c));
-                    break;
-                case 4:
-                    System.out.println("Introduzca la base");
-                    double base = verificarReal(sc);
-                    System.out.println("Introduzca el exponente");
-                    double exp = verificarReal(sc);
-                    System.out.println("Resultado = " + potencia(base, exp));
-                    break;
-            }
-
-        } while (opcion != 5);
-
-        System.out.println("FIN DE PROGRAMA");
-
-        leer.close();
-    }
-
+    private static Scanner leer = new Scanner(System.in);
     /**
      * Método que imprime el menú por la pantalla
      * @param opcion (scanner que se introduce en la consola)
@@ -151,8 +96,4 @@ public class Producto {
     public static double potencia (double base, double exp) {
         return Math.pow(base, exp);
     }
-
-    /**
-     * Método para el test de la clase
-     */
 }

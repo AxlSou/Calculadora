@@ -4,15 +4,11 @@ import java.util.Scanner;
 
 public class Producto {
 
-    private static Scanner leer = new Scanner(System.in);
-
     /**
-     * Método que imprime el menú por la pantalla
-     *
-     * @param opcion (scanner que se introduce en la consola)
-     * @return Elige la operación que se desea realizar
+     * Método para obtener los resultados utilizando los demas métodos
+     * @param args
      */
-    public static int menu() {
+    public static void menu() {
         final Scanner leer = new Scanner(System.in);
         int opcion = 0;
 
@@ -23,9 +19,8 @@ public class Producto {
             System.out.println("4.- Potencia de un número");
             System.out.println("5.- Salir");
             System.out.println("Teclea una opción (5 para salir)");
-            opcion = leer.nextInt();
 
-            opcion = leer.next();
+            opcion = leer.nextInt();
             switch (opcion) {
                 case 1:
                     double a;
@@ -137,8 +132,4 @@ public class Producto {
         return Math.pow(base, exp);
     }
 
-    /**
-     * Método para obtener los resultados utilizando los demas métodos
-     * @param args
-     */
 }

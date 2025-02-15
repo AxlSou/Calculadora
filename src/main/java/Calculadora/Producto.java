@@ -96,4 +96,57 @@ public class Producto {
     public static double potencia (double base, double exp) {
         return Math.pow(base, exp);
     }
+
+    /**
+     * Método para obtener los resultados utilizando los demas métodos
+     * @param args
+     */
+    public static void main(String[] args) {
+
+        final Scanner leer = new Scanner(System.in);
+
+        int opcion = 0;
+        do {
+            opcion = Producto.menu();
+            switch (opcion) {
+                case 1:
+                    double a;
+                    System.out.println("Introduzca un número real");
+                    a = Producto.verificarReal(leer);
+                    double b;
+                    System.out.println("Introduzca otro número real");
+                    b = Producto.verificarReal(leer);
+                    System.out.println("Resultado = " + Producto.productoReales2(a, b));
+                    break;
+                case 2:
+                    System.out.println("Introduzca un número entero");
+                    int c = Producto.verificarEntero(leer);
+                    System.out.println("Introduzca otro número entero");
+                    int d = Producto.verificarEntero(leer);
+                    System.out.println("Resultado = " + Producto.productoEnteros(c, d));
+                    break;
+                case 3:
+                    System.out.println("Introduzca un número real");
+                    double e = Producto.verificarReal(leer);
+                    System.out.println("Introduzca otro número real");
+                    double f = Producto.verificarReal(leer);
+                    System.out.println("Introduzca otro número real");
+                    double g = Producto.verificarReal(leer);
+                    System.out.println("Resultado = " + Producto.productoReales3(e, f, g));
+                    break;
+                case 4:
+                    System.out.println("Introduzca la base");
+                    double base = Producto.verificarReal(leer);
+                    System.out.println("Introduzca el exponente");
+                    double exp = Producto.verificarReal(leer);
+                    System.out.println("Resultado = " + Producto.potencia(base, exp));
+                    break;
+            }
+
+        } while (opcion != 5);
+
+        System.out.println("FIN DE PROGRAMA");
+
+        leer.close();
+    }
 }

@@ -12,59 +12,14 @@ import java.util.Scanner;
 
 public class Producto {
 
-    private static Scanner leer = new Scanner(System.in);
+   private static Scanner leer = new Scanner(System.in);
 
-    /**
-     * Método que permite multiplicar dos números reales
-     * @param a = primer número real
-     * @param b = segundo número real
-     * @return producto de los dos parámetros
-     */
-    public static double productoReales2(double a, double b) {
-        return a * b;
-    }
+   public static void main(String[] args){
 
-    /**
-     * Método que permite multiplicar dos números enteros
-     * @param a = primer número entero
-     * @param b = segundo número entero
-     * @return producto de los dos parámetros
-     */
-    public static int productoEnteros(int a, int b){
-        return a * b;
-    }
-
-    /**
-     * Método que permite multiplicar tres números reales
-     * @param a = primer número real
-     * @param b = segundo número real
-     * @param c = tercer número real
-     * @return producto de los tres parámetros
-     */
-    public static double productoReales3(double a, double b, double c){
-        return a * b * c;
-    }
-
-    /**
-     * Método que permite obtener la potencia de un número
-     * @param base
-     * @param exp
-     * @return potencia de la base elevado a su exponente
-     */
-    public static double potencia (double base, double exp) {
-        return Math.pow(base, exp);
-    }
-
-    /**
-     * Método para el test de la clase
-     */
-   public static void test{
-
-        private static Scanner leer;
         int opcion = 0;
 
         do {
-            opcion = pintarMenu();
+            opcion = menu();
             switch (opcion) {
                 case 1:
                     System.out.println("Introduzca un número real");
@@ -110,7 +65,7 @@ public class Producto {
      * @param opcion (scanner que se introduce en la consola)
      * @return Elige la operación que se desea realizar
      */
-    public static int pintarMenu() {
+    public static int menu() {
         int opcion = 0;
 
         System.out.println("1.- Producto de dos números reales");
@@ -155,4 +110,49 @@ public class Producto {
         }
         return sc.nextDouble();
     }
+
+    /**
+     * Método que permite multiplicar dos números reales
+     * @param a = primer número real
+     * @param b = segundo número real
+     * @return producto de los dos parámetros
+     */
+    public static double productoReales2(double a, double b) {
+        return a * b;
+    }
+
+    /**
+     * Método que permite multiplicar dos números enteros
+     * @param a = primer número entero
+     * @param b = segundo número entero
+     * @return producto de los dos parámetros
+     */
+    public static int productoEnteros(int a, int b){
+        return a * b;
+    }
+
+    /**
+     * Método que permite multiplicar tres números reales
+     * @param a = primer número real
+     * @param b = segundo número real
+     * @param c = tercer número real
+     * @return producto de los tres parámetros
+     */
+    public static double productoReales3(double a, double b, double c){
+        return a * b * c;
+    }
+
+    /**
+     * Método que permite obtener la potencia de un número
+     * @param base
+     * @param exp
+     * @return potencia de la base elevado a su exponente
+     */
+    public static double potencia (double base, double exp) {
+        return Math.pow(base, exp);
+    }
+
+    /**
+     * Método para el test de la clase
+     */
 }

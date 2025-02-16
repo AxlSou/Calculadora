@@ -90,7 +90,7 @@ public class LogaritmosyExponenciales {
 
 
     /**
-     * Lo siguiente es un menú interactivo para realizar los cálculos de logaritmos y exponenciales.
+     * Lo siguiente es un menú interactivo para realizar los cálculos de logaritmos y exponenciales..
      */
 
     public static void menu() {

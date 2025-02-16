@@ -29,16 +29,9 @@ public class SumaTest {
 
     @Test
     public void testSumaAcumulacion() {
-        // Para probar esta funcion es mejor mockear la entrada, pero como no se puede facilmente,
-        // aquí simplemente hacemos una prueba conceptual
-        // Esto sería complicado sin refactorizar para evitar el scanner.
-        // Pero podemos comprobar la funcionalidad si hacemos una adaptación.
+
         double resultado = Suma.sumaAcumulacion(5);
 
-        // Ten en cuenta que esta prueba no tiene en cuenta la entrada del usuario
-        // Aquí simplemente se necesita asegurar que se hace la suma correctamente al cambiar manualmente los métodos
-        // Para propósitos de demostración, asumimos un caso específico.
-        // Para un correcto testing, necesitaríamos separar la lógica de entrada/salida.
         assertTrue(resultado >= 5); // Esto es solo un chequeo de base
     }
 }

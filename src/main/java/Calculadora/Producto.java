@@ -124,12 +124,16 @@ public class Producto {
 
     /**
      * Método que permite obtener la potencia de un número
+     * Si los parametros introducidos dan un resultado muy grande, al implemetnar la clase Math.pow,
+     * lo interpreta como infinito.
      * @param base
      * @param exp
      * @return potencia de la base elevado a su exponente
      */
     public static double potencia (double base, double exp) {
+        if ( base == 0 && exp <0 ) {
+            throw new ArithmeticException("Error: No se puede elevar 0 a un numero negativo (division entre 0)");
+        }
         return Math.pow(base, exp);
     }
-
 }

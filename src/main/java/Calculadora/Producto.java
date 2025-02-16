@@ -1,4 +1,4 @@
-package calculadora;
+package Calculadora;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ public class Producto {
 
     /**
      * Método para obtener los resultados utilizando los demas métodos
-     * @param args
+     * @param
      */
     public static void menu() {
         final Scanner leer = new Scanner(System.in);

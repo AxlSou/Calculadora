@@ -18,15 +18,18 @@ class TrigonometriaTest {
     void seno() {
         Trigonometria.seno(0);
         assertEquals(0, Trigonometria.seno(0));
-
     }
 
     @Test
     void coseno() {
+        Trigonometria.coseno(0);
+        assertEquals(1, Trigonometria.coseno(0));
     }
 
     @Test
     void tangente() {
+        Trigonometria.tangente(0);
+        assertEquals(0, Trigonometria.tangente(0));
     }
 
     @Test

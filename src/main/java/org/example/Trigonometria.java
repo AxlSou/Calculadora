@@ -45,7 +45,7 @@ public class Trigonometria {
      * @return  El valor de la tangente del angulo.
      * */
 
-    public  static double tangente(double a) {
+    public  static  double tangente(double a) {
         return seno(a) / coseno(a);
     }
 
@@ -72,25 +72,46 @@ public class Trigonometria {
             switch (opcion){
                 case '1':
                     System.out.println("Introduce tu angulo en radianes");
-                    double anguloSeno = (leer.nextDouble());
-                    double resultadoSeno = seno(anguloSeno);
-                    System.out.println("El seno de " + anguloSeno + " es " + resultadoSeno);
-                    break;
+                    if (leer.hasNextDouble()){
+                        double anguloSeno = (leer.nextDouble());
+                        double resultadoSeno = seno(anguloSeno);
+                        System.out.println("El seno de " + anguloSeno + " es " + resultadoSeno);
+                        }
+                    else {
+                        System.out.println("La entrada no es valida");
+                        }
+                    leer.next();
+
+                break;
+
 
                 case '2':
                     System.out.println("Introduce tu angulo en radianes");
-                    double anguloCoseno = (leer.nextDouble());
-                    double resultadoCoseno = coseno(anguloCoseno);
-                    System.out.println("El coseno de " + anguloCoseno + " es " + resultadoCoseno);
-                    break;
+                    if (leer.hasNextDouble()){
+                        double anguloCoseno = (leer.nextDouble());
+                        double resultadoCoseno = coseno(anguloCoseno);
+                        System.out.println("El coseno de " + anguloCoseno + " es " + resultadoCoseno);
+                    }
+                    else { System.out.println("La entrada no es valida");
+                    }
+                    leer.next();
+
+                break;
 
 
                 case '3':
                     System.out.println("Introduce tu angulo en radianes");
                     double anguloTangente = (leer.nextDouble());
-                    double resultadoTangente = tangente(anguloTangente);
-                    System.out.println("La tanjente de " + anguloTangente + " es " + resultadoTangente);
-                    break;
+                    if (Math.abs(coseno(anguloTangente))==0){
+                        System.out.println("El coseno no puede ser cero");
+                    }else {
+                        double resultadoTangente = tangente(anguloTangente);
+                        System.out.println("La tanjente de " + anguloTangente + " es " + resultadoTangente);
+                    }
+
+
+                    leer.next();
+                break;
 
             }
         }while (opcion != '0');

@@ -1,4 +1,4 @@
-package Calculadora;
+package calculadora;
 
 import org.example.Suma;
 import org.junit.jupiter.api.Test;

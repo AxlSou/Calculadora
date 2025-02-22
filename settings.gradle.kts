@@ -1,2 +1,2 @@
-rootProject.name = "Calculadora"
+rootProject.name = "calculadora"
 

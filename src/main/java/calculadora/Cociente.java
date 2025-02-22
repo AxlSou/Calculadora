@@ -13,10 +13,26 @@ import java.util.Scanner;
 public class Cociente {
     private static final Scanner scanner = new Scanner(System.in);
 
+    /**
+     * Divide dos números enteros y devuelve el resultado como un double.
+     *
+     * @param a El dividendo.
+     * @param b El divisor.
+     * @return El resultado de la división de a entre b.
+     * @throws ArithmeticException Si se intenta dividir por cero.
+     */
     public static double dividirEnteros(int a, int b) {
         return dividirReales(a, b);
     }
 
+    /**
+     * Divide dos números reales y devuelve el resultado.
+     *
+     * @param a El dividendo.
+     * @param b El divisor.
+     * @return El resultado de la división de a entre b.
+     * @throws ArithmeticException Si se intenta dividir por cero.
+     */
     public static double dividirReales(double a, double b) {
         if (b == 0) {
             throw new ArithmeticException("ERROR: Division por cero no permitida.");
@@ -24,6 +40,13 @@ public class Cociente {
         return a / b;
     }
 
+    /**
+     * Calcula el inverso de un número real.
+     *
+     * @param a El número a invertir.
+     * @return El inverso de a (1/a).
+     * @throws ArithmeticException Si se intenta calcular el inverso de cero.
+     */
     public static double inverso(double a) {
         if (a == 0) {
             throw new ArithmeticException("ERROR: Inverso de cero no permitido.");
@@ -31,6 +54,13 @@ public class Cociente {
         return 1 / a;
     }
 
+    /**
+     * Calcula la raíz cuadrada de un número real.
+     *
+     * @param a El número al que se le calculará la raíz cuadrada.
+     * @return La raíz cuadrada de a.
+     * @throws ArithmeticException Si se intenta calcular la raíz cuadrada de un número negativo.
+     */
     public static double raizCuadrada(double a) {
         if (a < 0) {
             throw new ArithmeticException("ERROR: Raiz cuadrada de un numero negativo no permitida.");
@@ -38,7 +68,11 @@ public class Cociente {
         return Math.sqrt(a);
     }
 
-    public static void main(String [] args) {
+
+    /**
+     * Muestra un menú que permite al usuario elegir entre diferentes operaciones matemáticas.
+     */
+    public static void menu() {
         String opcion;
         do {
             System.out.println("Introduce una opcion: ");

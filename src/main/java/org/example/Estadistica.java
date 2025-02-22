@@ -7,7 +7,7 @@ import java.util.Scanner;
  * Clase para calcular diferentes formulas de estadística:
  * Proporciona operaciones de media, varianza y desviación estándar.
  *
- * @autor Noelia Prieto del Puerto
+ * @author Noelia Prieto del Puerto
  * @version 1.0
  */
 
@@ -19,6 +19,9 @@ public class Estadistica {
      */
     public static double CalcularMedia(double [] numeros) {
         double suma = 0;
+        if (numeros.length < 1) {
+            return 0;
+        }
         for (double numero : numeros) {
             suma += numero;
         }

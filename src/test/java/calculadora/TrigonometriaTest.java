@@ -1,6 +1,5 @@
-package Calculadora;
+package calculadora;
 
-import org.example.Trigonometria;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

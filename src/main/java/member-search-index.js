@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"org.example","c":"Trigonometria","l":"coseno(double)"},{"p":"org.example","c":"Trigonometria","l":"menu()"},{"p":"org.example","c":"Trigonometria","l":"seno(double)"},{"p":"org.example","c":"Trigonometria","l":"tangente(double)"},{"p":"org.example","c":"Trigonometria","l":"Trigonometria()","u":"%3Cinit%3E()"}];updateSearchResults();

@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Clase para calcular diferentes formulas de estadística:
  * Proporciona operaciones de media, varianza y desviación estándar.
  *
- * @autor Noelia Prieto del Puerto
+ * @author Noelia Prieto del Puerto (noeli22)
  * @version 1.0
  */
 

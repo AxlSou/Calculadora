@@ -6,8 +6,7 @@ import java.util.Scanner;
  * Clase que permite realizar operaciones de cociente, inverso y raiz cuadrada.
  *
  * @version 1.0
- * @since 1.0
- * @author Axel Soubielle Almada
+ * @author Axel Soubielle Almada (AxlSou)
  */
 
 public class Cociente {

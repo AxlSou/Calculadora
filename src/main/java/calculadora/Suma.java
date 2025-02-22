@@ -1,4 +1,4 @@
-package org.example;
+package calculadora;
 
 import java.util.Scanner;
 
@@ -54,7 +54,7 @@ public class Suma {
                     break;
                 case '4':
                     System.out.println("Introduce un número para sumar (o '0' para salir):");
-                    double numeroInicial = sc.nextDouble();
+                    double numeroInicial = verificarDouble(sc);
                     System.out.println("La suma total es : " + Suma.sumaAcumulacion(numeroInicial));
 
 

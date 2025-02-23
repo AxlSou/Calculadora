@@ -82,7 +82,6 @@ public class Trigonometria {
 
                     break;
 
-
                 case '2':
                     System.out.println("Introduce tu angulo en radianes");
                     if (leer.hasNextDouble()) {
@@ -95,7 +94,6 @@ public class Trigonometria {
                     leer.next();
 
                     break;
-
 
                 case '3':
                     System.out.println("Introduce tu angulo en radianes");

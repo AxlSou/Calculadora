@@ -122,7 +122,7 @@ public class Cociente {
                 }
             System.out.println();
         } while (!opcion.equals("X"));
-        scanner.close();
+
     }
 
     public static double verificarDouble(){

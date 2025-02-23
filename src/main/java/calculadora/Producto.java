@@ -64,7 +64,6 @@ public class Producto {
 
         System.out.println("FIN DE PROGRAMA");
 
-        leer.close();
     }
 
     /**
@@ -133,6 +132,7 @@ public class Producto {
      * @param base
      * @param exp
      * @return potencia de la base elevado a su exponente
+     * @throws ArithmeticException No se puede elevar 0 a un numero negativo
      */
     public static double potencia (double base, double exp) {
         if ( base == 0 && exp <0 ) {

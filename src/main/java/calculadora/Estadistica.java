@@ -18,6 +18,9 @@ public class Estadistica {
      */
     public static double CalcularMedia(double [] numeros) {
         double suma = 0;
+        if (numeros.length < 1) {
+            return 0;
+        }
         for (double numero : numeros) {
             suma += numero;
         }
@@ -114,3 +117,4 @@ public class Estadistica {
 
     }
 }
+

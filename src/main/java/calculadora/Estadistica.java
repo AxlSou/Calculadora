@@ -16,6 +16,9 @@ public class Estadistica {
      * Media de un array de números.
      *@param numeros Array de números.
      * @return La media del conjunto de datos.
+     * Casos especiales:
+     * - Si el array está vacío, devuelve 0 para evitar divisiones por cero.
+     * - Si algún número es negativo, el resultado seguirá siendo válido, ya que la varianza es siempre positiva.
      *
      */
     public static double CalcularMedia(double [] numeros) {

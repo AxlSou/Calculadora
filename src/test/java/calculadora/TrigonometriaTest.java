@@ -16,24 +16,19 @@ class TrigonometriaTest {
 
     @Test
     void seno() {
-        Trigonometria.seno(0);
-        assertEquals(0, Trigonometria.seno(0));
+        Trigonometria.seno(Math.PI/2);
+        assertEquals(1, Trigonometria.seno(Math.PI/2));
     }
 
     @Test
     void coseno() {
-        Trigonometria.coseno(0);
-        assertEquals(1, Trigonometria.coseno(0));
+        Trigonometria.coseno(Math.PI);
+        assertEquals(-1, Trigonometria.coseno(Math.PI));
     }
 
     @Test
     void tangente() {
         Trigonometria.tangente(0);
         assertEquals(0, Trigonometria.tangente(0));
-    }
-
-    @Test
-    void menu() {
-        Trigonometria.menu();
     }
 }

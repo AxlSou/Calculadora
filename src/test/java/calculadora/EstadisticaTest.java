@@ -1,6 +1,5 @@
 package calculadora;
 
-import org.example.Estadistica;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,12 +1,11 @@
 package calculadora;
 /**
  * Clase Resta
- *
  * Esta clase implementa métodos para realizar operaciones de resta con diferentes tipos de números.
  * Además, mantiene un valor acumulado al cual se le pueden restar valores sucesivamente.
  *
- * Autor: Marilu Hernandez
- * Perfil de GitHub: SoyMarilu
+ * @author: Marilu Hernandez (SoyMarilu)
+ * @version 1.0
  */
 
 public class Resta {

@@ -2,11 +2,15 @@ package calculadora;
 
 import java.util.Scanner;
 
+/**
+ * Clase Producto
+ * @author Jorge Vizuete Mendez (jorgevizu4)
+ */
+
 public class Producto {
 
     /**
      * Método para obtener los resultados utilizando los demas métodos
-     * @param
      */
     public static void menu() {
         final Scanner leer = new Scanner(System.in);

@@ -14,6 +14,8 @@ public class Estadistica {
 
     /**
      * Media de un array de números.
+     *@param numeros Array de números.
+     * @return La media del conjunto de datos.
      *
      */
     public static double CalcularMedia(double [] numeros) {
@@ -29,6 +31,8 @@ public class Estadistica {
 
     /**
      * Varianza de un array de números.
+     *@param numeros Array de números.
+     *@return La varianza del conjunto de datos.
      */
 
     public static double CalcularVarianza(double [] numeros){
@@ -47,6 +51,8 @@ public class Estadistica {
 
     /**
      * Desviación Estándar de un array de números.
+     * @param numeros Array de números.
+     * @return La desviación estándar del conjunto de datos.
      */
 
     public static double CalcularDesviacionEstandar(double [] numeros){
@@ -67,6 +73,7 @@ public class Estadistica {
 
     /**
      * Menú interactivo para el usuario y poder elegir la función que desea.
+     * Permite calcular la media, varianza o desviación estándar de un conjunto de números.
      */
     public static void menu () {
         Scanner sc = new Scanner(System.in);

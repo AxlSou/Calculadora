@@ -125,6 +125,11 @@ public class Cociente {
 
     }
 
+    /**
+     * Un metodo que me permite verificar que la entrada en consola es un Double.
+     * Si el valor introducido es un Double, el programa almacena la entrada, en caso de no serlo, te indica
+     * como introducirlo correctamente
+     */
     public static double verificarDouble(){
         while(!scanner.hasNextDouble()){
             System.out.println("Has introducido un valor erróneo, recuerde,decimales separados por comas");
@@ -135,6 +140,11 @@ public class Cociente {
         return numero;
     }
 
+    /**
+     * Un metodo que permite verificar que la entrada en consola es un Entero (Integer).
+     * Si el valor introducido es un Entero, el programa almacena la entrada, en caso de no serlo, te indica
+     * como introducirlo correctamente
+     */
     public static int verificarEntero(){
         while(!scanner.hasNextInt()){
             System.out.println("Has introducido un valor erróneo, introduza un entero");

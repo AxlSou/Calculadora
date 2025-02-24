@@ -3,12 +3,7 @@ package calculadora;
 import java.util.Scanner;
 
 /**
- * Clase Suma
- * Clase que proporciona la operación matemática Suma con varias opciones:
- *  1 -> Suma de dos números reales
- *  2 -> Suma de dos números enteros
- *  3 -> Suma de tres números reales
- *  4 -> Suma de valor acumulado
+ * Clase que proporciona la operación matemática Suma con varias opciones
  * @author Iván Díaz (ivXLR8)
  * @version 1.0
  */

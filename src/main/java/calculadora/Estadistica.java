@@ -14,7 +14,7 @@ public class Estadistica {
 
     /**
      * Media de un array de números.
-     *@param numeros Array de números.
+     * @param numeros Array de números.
      * @return La media del conjunto de datos.
      * Casos especiales:
      * - Si el array está vacío, devuelve 0 para evitar divisiones por cero.
@@ -34,8 +34,8 @@ public class Estadistica {
 
     /**
      * Varianza de un array de números.
-     *@param numeros Array de números.
-     *@return La varianza del conjunto de datos.
+     * @param numeros Array de números.
+     * @return La varianza del conjunto de datos.
      */
 
     public static double CalcularVarianza(double [] numeros){

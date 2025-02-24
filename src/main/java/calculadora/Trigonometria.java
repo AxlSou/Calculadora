@@ -1,17 +1,14 @@
 package calculadora;
 
 import java.util.Scanner;
+
 /**
- * @author Ruben Serrano Nohales (usuario git:guarin99)
- * @version 1.0
- *
  * Clase que facilita los metodos para calcular funciones trigonometricas basicas.
  * Funcion para calcular el seno , coseno y tangente de un angulo en radianes.
  * Inculuye un menu para que el usuario pueda realizar los calculos.
- *
+ * @author Ruben Serrano Nohales (usuario git:guarin99)
+ * @version 1.0
  * */
-
-
 public class Trigonometria {
 
     /**
@@ -78,7 +75,6 @@ public class Trigonometria {
                     } else {
                         System.out.println("La entrada no es valida");
                     }
-                    leer.next();
 
                     break;
 
@@ -91,7 +87,6 @@ public class Trigonometria {
                     } else {
                         System.out.println("La entrada no es valida");
                     }
-                    leer.next();
 
                     break;
 
@@ -102,11 +97,9 @@ public class Trigonometria {
                         System.out.println("El coseno no puede ser cero");
                     } else {
                         double resultadoTangente = tangente(anguloTangente);
-                        System.out.println("La tanjente de " + anguloTangente + " es " + resultadoTangente);
+                        System.out.println("La tangente de " + anguloTangente + " es " + resultadoTangente);
                     }
 
-
-                    leer.next();
                     break;
             }
         }while (opcion != '0');

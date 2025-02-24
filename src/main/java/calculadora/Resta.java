@@ -3,8 +3,6 @@ package calculadora;
 import java.util.Scanner;
 
 /**
- * Clase Resta
- *
  * Proporciona métodos para restar números reales y enteros, y un menú interactivo para seleccionar la operación.
  * Autor: Marilu Hernandez
  * Perfil de GitHub: SoyMarilu

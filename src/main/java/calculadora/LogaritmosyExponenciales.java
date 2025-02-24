@@ -2,18 +2,12 @@ package calculadora;
 
 import java.util.Scanner;
 
+/**
+ * Esta clase proporciona funciones para calcular logaritmos y exponenciales.
+ * @author Marta Mercado (martam-art)
+ * @version 1.0
+ */
 public class LogaritmosyExponenciales {
-
-    /**
-     * Clase Logaritmos y Exponenciales
-     * Esta clase proporciona funciones para calcular logaritmos y exponenciales.
-     * Los métodos son:
-     * 1 -> Cálculo del logaritmo natural (base e).
-     * 2 -> Cálculo del logaritmo en base 10.
-     * 3 -> Cálculo de la exponencial (e^x).
-     * @author Marta Mercado (martam-art)
-     * @version 1.0
-     */
 
     /**
      * Calcula el logaritmo natural (base e) de un número.
